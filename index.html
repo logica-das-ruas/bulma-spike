@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="node_modules/bulma/css/bulma.css" />
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
+    <script src="https://unpkg.com/pikaday@1.7.0/pikaday.js"></script>
+    <script src="./app.js"></script>
+</head>
+
+<body>
+
+    <h1>Dados do paciente</h1>
+    <div class="container">
+        <div class="field">
+            <div class="control">
+                <span>Nome completo: </span>
+                <input class="input is-primary is-one-quarter input border-fancy" type="text">
+            </div>
+        </div>
+        <div class="field">
+            <div class="control">
+                <span>data de nascimento: </span>
+                <input class="input is-primary is-one-quarter input border-fancy datepicker" type="text" id="data" placeholder="Data de Nascimento">
+            </div>
+        </div>
+        <div class="control">
+            <label class="radio border-fancy ">
+                <input type="radio" name="genero" value="feminino">
+                <span>F</span>
+            </label>
+            <label class="radio">
+                <input type="radio" name="genero" value="masculino">
+                <span>M</span>
+            </label>
+        </div>
+        <div class="container">
+            <div class="field">
+                <div class="control">
+                    <span>Cidade: </span>
+                    <input class="input is-primary is-one-quarter input border-fancy" type="text">
+                </div>
+            </div>
+            <div class="field">
+                <p class="control">
+                    <span>UF: </span>
+                    <span class="select border-fancy" >
+                        <select id="estado" name="estado">
+                            <option value="AC">Acre</option>
+                            <option value="AL">Alagoas</option>
+                            <option value="AP">Amapá</option>
+                            <option value="AM">Amazonas</option>
+                            <option value="BA">Bahia</option>
+                            <option value="CE">Ceará</option>
+                            <option value="DF">Distrito Federal</option>
+                            <option value="ES">Espírito Santo</option>
+                            <option value="GO">Goiás</option>
+                            <option value="MA">Maranhão</option>
+                            <option value="MT">Mato Grosso</option>
+                            <option value="MS">Mato Grosso do Sul</option>
+                            <option value="MG">Minas Gerais</option>
+                            <option value="PA">Pará</option>
+                            <option value="PB">Paraíba</option>
+                            <option value="PR">Paraná</option>
+                            <option value="PE">Pernambuco</option>
+                            <option value="PI">Piauí</option>
+                            <option value="RJ">Rio de Janeiro</option>
+                            <option value="RN">Rio Grande do Norte</option>
+                            <option value="RS">Rio Grande do Sul</option>
+                            <option value="RO">Rondônia</option>
+                            <option value="RR">Roraima</option>
+                            <option value="SC">Santa Catarina</option>
+                            <option value="SP">São Paulo</option>
+                            <option value="SE">Sergipe</option>
+                            <option value="TO">Tocantins</option>
+                            <option value="ES">Estrangeiro</option>
+                        </select>
+                    </span>
+            </div>
+            <div class="control">
+                <span>Situação: </span>
+                    <label class="radio border-fancy ">
+                        <input type="radio" name="situacao-transplante" value="pre">
+                        <span>Pré-Transplante</span>
+                    </label>
+                    <label class="radio">
+                        <input type="radio" name="situacao-transplante" value="pos">
+                        <span>Pós-Transplante</span>
+                    </label>
+            <div class="field">
+                <div class="control ">
+                    <span> órgão:</span>
+                    <div class="select border-fancy ">
+                        <select>
+                            <option name="hehe">Core</option>
+                            <option name="hehe">Pulmera</option>
+                            <option name="hehe">Core</option>
+                            <option name="hehe">Pulmera</option>
+                            <option name="hehe">Core</option>
+                            <option name="hehe">Pulmera</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <input class="button red" type="submit" value="Submit input">
+            </div>
+<div>
+    <h1>Dados do acomapanhante 1:</h1>
+</div>
+<div class="container">
+        <div class="field">
+            <div class="control">
+                <span>Nome completo: </span>
+                <input class="input is-primary is-one-quarter input border-fancy" type="text">
+            </div>
+        </div>
+        <div class="control">
+                <label class="radio border-fancy ">
+                    <input type="radio" name="genero" value="feminino">
+                    <span>F</span>
+                </label>
+                <label class="radio">
+                    <input type="radio" name="genero" value="masculino">
+                    <span>M</span>
+                </label>
+                <h1>Dados do acomapanhante 2:</h1>
+</div>
+<div class="container">
+        <div class="field">
+            <div class="control">
+                <span>Nome completo: </span>
+                <input class="input is-primary is-one-quarter input border-fancy" type="text">
+            </div>
+        </div>
+        <div class="control">
+                <label class="radio border-fancy ">
+                    <input type="radio" name="genero" value="feminino">
+                    <span>F</span>
+                </label>
+                <label class="radio">
+                    <input type="radio" name="genero" value="masculino">
+                    <span>M</span>
+                </label>
+</body>
+<script type="text/javascript">
+    document.addEventListener('DOMContentLoaded', function () {
+        var seletorData = seletorDeData('#data');
+    })
+</script>
+
+</html>

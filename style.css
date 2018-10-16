@@ -1,0 +1,9 @@
+.button-color{
+    background-color: rgba(77, 144, 231, 1);
+    color: rgba(235, 231, 231, 1); 
+}
+
+
+.input.border-fancy{
+    border-color: rgba(77, 144, 231, 0.7);
+}
