@@ -1,9 +1,43 @@
 .button-color{
-    background-color: rgba(77, 144, 231, 1);
-    color: rgba(235, 231, 231, 1); 
+    background-color: rgba(135, 206, 235, 1); 
+}
+.navbar{
+    background-color: rgba(135, 206, 235, 1);
+}
+body{
+    line-height: 40px;
+}
+h2{
+    font-size: 20px;
+}
+.input.border-fancy{
+    border-color:rgba(135, 206, 235, 1);
+
 }
 
-
-.input.border-fancy{
-    border-color: rgba(77, 144, 231, 0.7);
+.select.border-fancy{
+    color:rgba(135, 206, 235, 1);
+}
+.container{
+    padding-top:20px;
+}
+.pika-prev,
+.pika-next {
+    background-color:rgba(135, 206, 235, 1);
+}
+.pika-table{
+    background-color:rgba(255, 255, 255, 1);
+    border-color:red;
+}
+.navbar-brand{
+    align-items: center;
+    padding: 15px;
+    color: rgb(255, 255, 255);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+h1{
+    font-size: 25px;
+}
+.div1{
+    padding-top: 20px;
 }

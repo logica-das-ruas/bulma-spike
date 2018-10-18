@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 
@@ -14,9 +15,27 @@
 </head>
 
 <body>
-
-    <h1>Dados do paciente</h1>
+        <nav class="navbar" role="navigation" aria-label="main navigation">
+                <div class="navbar-brand">
+                    <h1>Hospebem</h1>
+                  <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                  </a>
+                </div>
+            
+              
+                  <div id="navbarBasicExample" class="navbar-menu">
+                        <div class="navbar-end">
+                          <a class="navbar-item">
+                            Voltar
+                          </a>
+                     </div>
+                </div>
+            </nav>
     <div class="container">
+        <h2>Dados do paciente</h2>
         <div class="field">
             <div class="control">
                 <span>Nome completo: </span>
@@ -25,12 +44,19 @@
         </div>
         <div class="field">
             <div class="control">
-                <span>data de nascimento: </span>
-                <input class="input is-primary is-one-quarter input border-fancy datepicker" type="text" id="data" placeholder="Data de Nascimento">
+                <span>Data de nascimento: </span>
+                <input class="input is-primary is-one-quarter input border-fancy datepicker" type="text" id="data">
+            </div>
+        </div>
+        <div class="field">
+            <div class="control">
+                <span>Telefone: </span>
+                <input class="input is-primary is-one-quarter input border-fancy" type="number" name="telefone">
             </div>
         </div>
         <div class="control">
             <label class="radio border-fancy ">
+                <span>Sexo: </span>
                 <input type="radio" name="genero" value="feminino">
                 <span>F</span>
             </label>
@@ -84,17 +110,18 @@
             </div>
             <div class="control">
                 <span>Situação: </span>
-                    <label class="radio border-fancy ">
-                        <input type="radio" name="situacao-transplante" value="pre">
-                        <span>Pré-Transplante</span>
-                    </label>
-                    <label class="radio">
-                        <input type="radio" name="situacao-transplante" value="pos">
-                        <span>Pós-Transplante</span>
-                    </label>
+                <label class="radio border-fancy ">
+                    <input type="radio" name="situacao-transplante" value="pre">
+                    <span>Pré-Transplante</span>
+                </label>
+                <label class="radio">
+                    <input type="radio" name="situacao-transplante" value="pos">
+                    <span>Pós-Transplante</span>
+                </label>
+            </div>
             <div class="field">
                 <div class="control ">
-                    <span> órgão:</span>
+                    <span> Órgão:</span>
                     <div class="select border-fancy ">
                         <select>
                             <option name="hehe">Core</option>
@@ -107,13 +134,20 @@
                     </div>
                 </div>
             </div>
-            <div>
-                <input class="button red" type="submit" value="Submit input">
+            <div class="field">
+                <div class="control ">
+                    <span>Cadeirante: </span>
+                    <div class="select border-fancy ">
+                        <select>
+                             <option name="hehe">Não</option>
+                             <option name="hehe">Sim</option>
+                        </select>
+                    </div>
+                </div>
             </div>
-<div>
-    <h1>Dados do acomapanhante 1:</h1>
-</div>
-<div class="container">
+        </div>
+    <div class="container">
+        <h2>Dados do acompanhante 1:</h2>
         <div class="field">
             <div class="control">
                 <span>Nome completo: </span>
@@ -121,32 +155,41 @@
             </div>
         </div>
         <div class="control">
-                <label class="radio border-fancy ">
-                    <input type="radio" name="genero" value="feminino">
-                    <span>F</span>
-                </label>
-                <label class="radio">
-                    <input type="radio" name="genero" value="masculino">
-                    <span>M</span>
-                </label>
-                <h1>Dados do acomapanhante 2:</h1>
-</div>
-<div class="container">
-        <div class="field">
-            <div class="control">
-                <span>Nome completo: </span>
-                <input class="input is-primary is-one-quarter input border-fancy" type="text">
-            </div>
+            <label class="radio border-fancy ">
+                <span>Sexo: </span>
+                <input type="radio" name="genero" value="feminino">
+                <span>F</span>
+            </label>
+            <label class="radio">
+                <input type="radio" name="genero" value="masculino">
+                <span>M</span>
+            </label>
         </div>
+    </div>
+<div class="container">
+    <h2>Dados do acompanhante 2:</h2>
+    <div class="field">
         <div class="control">
-                <label class="radio border-fancy ">
-                    <input type="radio" name="genero" value="feminino">
-                    <span>F</span>
-                </label>
-                <label class="radio">
-                    <input type="radio" name="genero" value="masculino">
-                    <span>M</span>
-                </label>
+            <span>Nome completo: </span>
+            <input class="input is-primary is-one-quarter input border-fancy" type="text">
+        </div>
+    </div>
+    <div class="control">
+        <span>Sexo: </span>
+            <label class="radio border-fancy ">
+                <input type="radio" name="genero" value="feminino">
+                <span>F</span>
+            </label>
+            <label class="radio">
+                <input type="radio" name="genero" value="masculino">
+                <span>M</span>
+            </label>
+    </div>
+    <div class="div1"> 
+        <input class="button is-rounded button-color" type="submit" value="Enviar">
+    </div>
+</div>
+
 </body>
 <script type="text/javascript">
     document.addEventListener('DOMContentLoaded', function () {
